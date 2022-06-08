@@ -1,0 +1,8 @@
+#box1{
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+}
+#box1 h3{
+    color: red;
+}
