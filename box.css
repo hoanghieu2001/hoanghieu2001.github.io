@@ -14,14 +14,32 @@ body{
     height: 400px;  
     background-color: rgb(252, 255, 255);
     box-shadow: 0px 0px 8px 0px #888888;
+    
+    overflow: hidden;
+    position: relative;
 }
 #img{
     width: 100%;
-   height: 70%; 
-   overflow: hidden;
-   display: flex;
-   justify-content: content;
-   align-items: center;
+    height: 70%; 
+    overflow: hidden;
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+#img img {
+    transition: all 1s;
+}
+#container:hover img{
+    transform: scale(1.2);
+    transition:all 1s;
+    opacity: 1;
+    
+    /* -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+     */
 }
 #img img{
     width: 100%;
@@ -29,8 +47,19 @@ body{
 }
 #container #title{
     height: 30%;
-    transs
+    opacity: 0;
+    transition: all 1s;
+    position: relative;
+    top: 100px;
+    left: 0;
 }
+#container:hover #title{
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 .box1{
     width: 100%;
     height:50%;
