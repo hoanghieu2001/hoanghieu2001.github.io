@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+   
+}
+#img{
+    width: 100%;
+    height: 60%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#container:hover img{
+    transition: ;
+}
+#container:hover #content{
+    position: relative;
+    top:-100px;
+    
+}
+#container:hover p{
+    opacity: 1;
+}
+#content{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #fff;
+    transition: all 1s;
+    top: 0;
+}
+#title{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#paragraph{
+
+}
+.header{
+
+}
+.header>h4{
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: 10px auto;
+}
+.document{
+
+}
+.document p{
+    opacity: 0;
+    padding: 10px ;
+}
+.item{
+    display: flex;
+    justify-content:start;
+
+}
+.ti-alarm-clock{
+   padding: 0 10px;
+}
+.ti-email{
+}
