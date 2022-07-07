@@ -8,12 +8,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #container{
     width: 300px;
     height: 400px;
     overflow: hidden;
-   
+   box-shadow: 0px 0px 0px 0.3px #888888;
+   /* border: 1px solid; */
 }
 #img{
     width: 100%;
@@ -24,54 +26,88 @@ img{
     height: 100%;
 }
 #container:hover img{
-    transition: ;
+    filter:brightness(40%)
 }
 #container:hover #content{
     position: relative;
-    top:-100px;
+    top:-70px;
     
 }
 #container:hover p{
-    opacity: 1;
+    opacity: 0.7;
 }
 #content{
     width: 100%;
-    height: 20%;
+    height: 40%;
     position: relative;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     background-color: #fff;
     transition: all 1s;
     top: 0;
+    /* overflow: hidden; */
+    top: 0px;
 }
 #title{
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1.2em;
+    clear: both;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 15px;
+    padding-bottom: 4px;
+    padding-top: 10px;
+}
+#title>h3{
+    font-weight: 100px;
 }
 #paragraph{
-
+    width: 100%;
+    height: 40%;
+    
 }
 .header{
-
+    padding: 0px 15px;
+    padding-bottom: 10px;
 }
 .header>h4{
     font-size: 1.2em;
-    font-weight: 100;
-    padding: 10px auto;
+    font-weight: 400;
+    color:rgb(247, 64, 64);
+    opacity: 0.7;
 }
 .document{
-
+    width: 100%;
+    padding: 5px 10px ;
+    height: 100px;
+    
+    padding: 0 16px;
+    box-sizing: border-box;
+    line-height: 23px;
 }
-.document p{
+.document>p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     opacity: 0;
-    padding: 10px ;
+    overflow: hidden;
+   position: relative;
+   top: 0;
+   left: 0;
+   right: 0;
+    font-size: 0.8em;
 }
 .item{
+    height: 10%;
+    background-color:#fff;
     display: flex;
-    justify-content:start;
-
+    justify-content:flex-start;
+    position: relative;
+    top: -43px;
+    margin: 5px 10px;
+    font-size: 13px;
+    opacity: 0.5;
 }
 .ti-alarm-clock{
-   padding: 0 10px;
+    padding-left: 10px;
+    
 }
 .ti-email{
+    padding-left: 20px;
+    padding-right: 4px;
 }
